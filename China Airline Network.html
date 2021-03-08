@@ -21,18 +21,23 @@
     
     <style>
         .mainheader{
-            background-color:#22252c;
             position: relative;
-            height:60px;
-            
+            background-color:#22252c;
+            z-index: 0;
+        }
+        .container2{
+
         }
         .header container{
             position: relative;
+            float: left!important;
         }
         .logo container{
             position: relative;
             z-index: 1;
-            
+            float: right;
+            box-sizing: border-box;
+            width: 10%;
         }
         
         .main content{
@@ -171,15 +176,13 @@
 <body>  
     
     <div class="mainheader">
-        <div class="header container">
-            <h1 style="color:white;font-size:25px;font-family:Verdana;text-align:left;font-weight:bold;">China Airline Network</h1>
-            
-        </div>
-        <div class='logo container'>
-            <p>
+        <div class="container2">
+            <div class="header container">
+                <h1 style="color:white;font-size:25px;font-family:Verdana;text-align:left;font-weight:bold;">China Airline Network</h1>
+            </div>
+            <div class='logo container'>
                 <img src="https://raw.githubusercontent.com/xudong-zh/xudong-zh.github.io/main/image/network_logo.png.png" width=50 />
-            </p>
-            
+            </div>
         </div>
     </div>
     <div class="main content">
