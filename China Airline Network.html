@@ -78,11 +78,20 @@
             left: 0%;
             top: 0%;
         }
+        .barchartrace{
+            position: relative;
+            width:auto;
+            min-height: 600px;
+            width: 100%;
+            float: left;
+            
+        }
         
     </style>
     
     <style>    
-        #chartContainer {width: 580px; height:30px; margin-left: 15px; margin-top: 0px; background-color: gray} 
+        #chartContainer {width: 580px; height:330px; margin-left: 15px; margin-top: 0px;} 
+        #chartheader {width: 580px; height:30px; margin-top: 0px; background-color: gray;} 
         #chartContainer p {margin-left: 15px; margin-bottom: 5px; margin-top: 0; padding: 0;}
         #charttitle {font-family: verdana; font-weight: bold; font-size:22px;color:white ;}
     </style>
@@ -170,14 +179,16 @@
           
 </head>
 <body>  
-    
-    <div class="mainheader">
-            <div class="header container">
-                <img src="https://raw.githubusercontent.com/xudong-zh/xudong-zh.github.io/main/image/network_logo.png.png" width=60  />
-                <span style="color:white;font-size:25px;;font-family:Verdana;vertical-align:middle;font-weight:bold;">China Airline Network</span> 
-            </div>
-
+    <div class='First page'>
+        <img src="https://raw.githubusercontent.com/xudong-zh/xudong-zh.github.io/main/image/network_logo.png.png"/>
     </div>
+    <div class="mainheader">
+        <div class="header container">
+            <img src="https://raw.githubusercontent.com/xudong-zh/xudong-zh.github.io/main/image/network_logo.png.png" width=60  />
+            <span style="color:white;font-size:25px;;font-family:Verdana;vertical-align:middle;font-weight:bold;">China Airline Network</span> 
+        </div>
+    </div>
+    
     <div class="main content">
         <div class="content container">
             <h2 style="color:black;font-size:20px;font-family:Verdana;">How Do the Airlines Connecting China's Cities?</h2>
@@ -192,10 +203,12 @@
             </div>
             <div class = 'rightcontentmap'>
                 <div id="chartContainer">
-                    <p id="charttitle" >Chart title is here</p>
-                    
+                    <div id='chartheader'>
+                        <p id="charttitle" >Chart title is here</p>
+                        
+                    </div>
                     <p id="chartsubhead">Passengers 2001-2019. Data Civil Aviation Administration of China.</p>
-                    <p><select id="AirportMenu"><option>Change Airport Here:</option></select></p>  <!-- This is the drop down menu to select different cities-->
+                    <p><select id="AirportMenu"><option>Change Airport Here:</option></select></p>  <!-- This is the drop down menu to select different airports-->
 
                 </div>
 
@@ -204,7 +217,25 @@
             
     </div>
     
-    <div class="mainheader">
+    <div class="Maincontainer">
+        <div class = "container"> 
+            <div class="barchartrace">
+                <div id="header container" style="background-color:gray; width:510px;">
+                     <span style="color:white;font-size:22px;;font-family:Verdana;vertical-align:middle;font-weight:bold;margin-left: 15px;">Population of Each Airport(Per Million)</span>
+                </div>
+                <div class="flourish-embed" data-src="visualisation/354282" data-height="100%">
+                    <iframe src='https://flo.uri.sh/visualisation/5507030/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>   
+   
+    
+    
+    
+
+<div class="mainheader">
         <div class="header container">
             <span style="color:white;font-size:22px;;font-family:Verdana;vertical-align:middle;font-weight:bold;">Copyright Information</span>
         </div>
@@ -212,7 +243,7 @@
     
     <div class="main content">
         <div class="content container">
-            <h2 style="color:black;font-size:17px;font-family:Times New Roman;">You can check the copyright of the element used in this website by clicking below link:</h2>
+            <h2 style="color:black;font-size:17px;font-family:Times New Roman;">You can check the copyright of the element used in this website by clicking the link below:</h2>
             <p>Http://</p>
         </div>
     </div>
